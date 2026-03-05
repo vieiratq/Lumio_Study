@@ -1,0 +1,70 @@
+#containerconfig{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e1e1e;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 1000;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#configBTN{
+    padding: 0px;
+    position: absolute;
+    right: 15PX;
+    bottom: 15px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background:none;
+    font-size: 30px;
+}
+.btnoption {
+  height: 50px;
+  margin: 5px;
+  width: 80%px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    
+}
+
+.btnoption:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.btnoption:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}

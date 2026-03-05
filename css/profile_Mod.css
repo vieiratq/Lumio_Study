@@ -1,0 +1,104 @@
+#userconfig{
+    margin-left: 4px;
+}
+.fotoPerfil{
+    height: 80%;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    
+}
+.nivel{
+    display: flex;
+    flex-direction: column;
+}
+.nivel{
+    font-size: 0.7rem;
+}
+#userconfig{
+    cursor: pointer;
+}
+img{
+    width: 100%;       
+    height: 100%;     
+    object-fit: cover;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);     border: 1px solid rgba(10, 2, 2, 0.52);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    height: 20%;
+    width: 80%;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    
+
+}
+/* From Uiverse.io by Randdose */
+#savebtn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 0.7 em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+#savebtn p {
+  z-index: 1;
+}
+
+#savebtn:hover {
+  color: #212121;
+}
+
+#savebtn:active {
+  border-color: teal;
+}
+
+#savebtn::after, .button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+#savebtn::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+#savebtn::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+#savebtn:hover:before {
+  transform: translateX(-1em);
+}
+
+#savebtn:hover:after {
+  transform: translateX(1em);
+}
+
+#savebtn:active:before,
+#savebtn:active:after {
+  background: teal;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="../img/icon/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumio</title>
+    <link rel="stylesheet" href="../css/maint_timer.css">
+</head>
+<body>
+    <main class="main" style="background-image: url(../img/background/background.jpg);" >
+        <div class="container">
+            <button id="configBTN" aria-label="Configurações">⚙️</button>
+            <div id="modal" class="modal" style="display: none;">
+                <h3>digite seu novo nome</h3>
+                <label for="newname">name:</label>
+                <input id="newname" type="text" placeholder="nome">
+                <span id="mensagem-erro" style="color: #ff4d4d; font-size: 0.8rem; display: none;">Digite no maximo 12 caracteres</span>
+                <button id="savebtn" >salvar</button>
+            </div>
+            
+            <div id="timeSelect" style="display: none;">
+                 <button class="buttonTime" id="easy" >easy</button>
+                 <button class="buttonTime" id="medium" >medium</button>
+                 <button class="buttonTime" id="hard" >hard</button>
+            </div>
+            
+            <div id="sleepSelect" style="display: none;">
+                 <button class="buttonTime" id="easySleep" >5 minutos </button>
+                 <button class="buttonTime" id="mediumSleep" >10 minutos </button>
+                 <button class="buttonTime" id="hardSleep" >15 minutos </button>
+            </div>
+            
+            <div class="profile">
+                <div class="fotoPerfil"><img src="../img/profile/default.png" alt="foto de perfil"></div>
+                <div class="nivel">
+                    <div style="display: flex;" class="user">
+                        <h2>Nome: </h2>
+                        <H2 id="userconfig">alterar nome</H2>
+                    </div>
+                    <div style="display: flex; flex-direction: initial;gap: 5px;" class="niveis">
+                        <h2>nivel:</h2>
+                        <h2 id="level">1</h2>
+                    </div>
+                    <div class="exp">
+                        <h3>XP:</h3>
+                        <h3 id="xp">00</h3>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="contador">
+                <h2 id="relogio" >25:00</h2>
+                <button id="startButton" >Play</button>
+                <button id="reset" >Reset</button>
+            </div>
+        </div>  
+        
+        <div id="overlay" class="overlay" style="display: none;"></div>
+        
+        <div class="configDiv">
+            <div id="containerconfig" style="display: none;">
+                <button id="timeConfig" class="btnoption" >configurar tempo</button>
+                <button id="nameConfig" class="btnoption" >configurar nome</button>
+                <button class="btnoption" id="descansoBtn" >configurar descanso</button>
+                <button id="Sobre" class="btnoption" >Sobre</button>
+                <button id="sair" class="btnoption" >fechar</button>
+            </div>
+        </div>
+        
+        <div id="xp-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="icon">🏆</div>
+              <h2>Tempo Esgotado!</h2>
+             <p>Você completou o seu ciclo de foco.</p>
+              <div class="xp-badge"><h3 id="xpGanho" >+50xp</h3></div>
+             <button id="sleepBtn">descansar</button>
+            </div>
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
