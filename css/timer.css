@@ -28,7 +28,10 @@ html, body {
     background-position: center;
     
 }
-
+a, button, input, .botao-pomodoro {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent; 
+}
 .container{
     position: relative;
     background: rgba(255, 255, 255, 0.1);
