@@ -8,6 +8,9 @@
     font-weight: weight;
     font-style: normal;
 }
+body {
+  overflow: hidden;
+}
 .main{
     height: 100vh;
     width: 100%;
