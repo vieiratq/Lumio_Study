@@ -11,6 +11,9 @@
 body {
   overflow: hidden;
 }
+input, select, textarea {
+  font-size: 16px;
+}
 .main{
     height: 100vh;
     width: 100%;
@@ -37,7 +40,10 @@ body {
     height: 400px;
     width: 400px;
 }
-
+#newname{
+    height: 4vh;
+    border-radius: 14px;
+}
 .contador{
     display: flex;
     flex-direction: column;
