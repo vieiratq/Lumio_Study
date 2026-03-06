@@ -1,4 +1,5 @@
 <h1>Lumio study</h1>
+https://lumiostudy.netlify.app
 <h2>Sobre o Projeto</h2>
 
 Lumio é uma plataforma open source e sem fins lucrativos, projetada para os meus estudos e portfólio. Ele foi desenvolvido após eu iniciar o curso de Engenharia de Software, sendo meu primeiro projeto com HTML, CSS e JS juntos.
